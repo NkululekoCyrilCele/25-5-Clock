@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Pomodoro Clock</h1>
+        <div class="row">
+            <div class="col">
+                <h2 id="break-label">Break Length</h2>
+                <button id="break-decrement" class="btn btn-secondary">-</button>
+                <span id="break-length">5</span>
+                <button id="break-increment" class="btn btn-secondary">+</button>
+            </div>
+            <div class="col">
+                <h2 id="session-label">Session Length</h2>
+                <button id="session-decrement" class="btn btn-secondary">-</button>
+                <span id="session-length">25</span>
+                <button id="session-increment" class="btn btn-secondary">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 id="timer-label">Session</h3>
+                <div id="time-left">25:00</div>
+                <button id="start_stop" class="btn btn-primary">Start/Stop</button>
+                <button id="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+        <audio id="beep" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
